@@ -2,9 +2,11 @@
 Henry Perez
 Lab 8, Unittest
 September 29th, 2025
+October 6th, 2025
 """
 import unittest
 import calculations
+from employee import Employee
 
 # function to add and return the sum of two numbers
 def addtwonumbers(a,b):
@@ -36,7 +38,35 @@ class TestCalculation(unittest.TestCase):
         self.assertEqual(calculations.subtracttwonumbers(9,4),5)
         self.assertEqual(calculations.subtracttwonumbers(20),20)
 
+print("\n----- Example 3: Unittest for calculations -----")
+class TestEmployee(unittest.TestCase):
+    def setUp(self):
+        self.emp1 = Employee('Peter','Pan',50000)
 
+    # create a test for employee email
+    def test_emailemployee(self):
+        self.assertEqual(self.emp1.emailemployee, 'Peter.Pan@email.com')
+    
+    # create a test for employee full
+    def test_fullname(self):
+        self.assertEqual(self.emp1.fullname, "Peter_Pan")
+    
+        # update the first name
+        self.emp1.first = "Will"
+        self.assertEqual(self.emp1.fullname, "Will_Pan")
+    
+    # test raise
+    def test_salary(self):
+        # salary before raise
+        self.assertEqual(self.emp1.salary, 50000)
+        
+        # raise the salary
+        self.emp1.apply_Raise()
+
+        # test salary
+        self.assertEqual(self.emp1.salary, 52500)
+
+        
 
 if __name__ == "__main__":
     unittest.main()
