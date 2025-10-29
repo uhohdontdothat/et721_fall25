@@ -16,7 +16,9 @@
     <h1>Jinja engine</h1>
     <!-- for loop -->
      <ul>
-        {$ for eachfruit in fruits_list %}
+        {% for eachfruit in fruits_list %}
+            <li>{{eachfruit}}</li>
+        {% endfor %}
      </ul>
 </body>
 </html>
