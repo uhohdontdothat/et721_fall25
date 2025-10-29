@@ -8,9 +8,15 @@
 </head>
 <body>
     <h1 class="title">Welcome to Flask Application</h1>
-    <h2 class="subtitle">By: Henry Perez</h2>
+    <h2 class="subtitle">By: {{username}}</h2>
     <div class="introimg">
         <img src="../static/img1.jpg" alt="image">
     </div>
+
+    <h1>Jinja engine</h1>
+    <!-- for loop -->
+     <ul>
+        {$ for eachfruit in fruits_list %}
+     </ul>
 </body>
 </html>
