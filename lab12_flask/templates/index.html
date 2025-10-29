@@ -20,5 +20,19 @@
             <li>{{eachfruit}}</li>
         {% endfor %}
      </ul>
+
+     <!-- Conditional statement -->
+     {% if c in fruits_list %}
+        <p>Great! we have {{c}} today!</p>
+     {% else %}
+        <p>{{c}} is not in the list</p>
+     {% endif %}
+
+        {% extends "product.html"%}
+            {%block image%}../static/img1.png{%endblock%}
+            {%block imagetitle%}Mountain{%endblock%}
+            {%block cardinfo%}bla bla{%endblock%}
+
+
 </body>
 </html>

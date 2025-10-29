@@ -17,15 +17,16 @@ app = Flask(__name__)
 def index():
     name = 'Henry Perez'
     fruits = ['apple', 'orange', 'grapes']
+    checkfruit = 'pineapple'
     return render_template('index.html',username = name, fruits_list = fruits)
 
 @app.route('/about')
 def about():
-    return '<h1>About Us</h1>'
+    return render_template("about.html")
 
 @app.route('/quotes')
 def quotes():
-    return '<h1>Quotes<h1>'
+    return render_template("quotes.html")
 
 @app.route('/login')
 def login():
