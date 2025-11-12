@@ -3,12 +3,13 @@ Henry Perez
 Lab 4, Dictionary and Functions
 September 10th, 2025
 """
+
 print("----- Example 1: Dictionary -----")
 # contact dictionary with three different users
 contacts = {
-    "Bill" : "(718)111-2222",
+    "Bill": "(718)111-2222",
     "Martha": "(646)000-3333",
-    "Peter": "(212)000-1111"
+    "Peter": "(212)000-1111",
 }
 print(contacts)
 # Save the Value of a specific key
@@ -50,7 +51,7 @@ print(contacts)
 
 print("----- Example 6: Add a new key:value pair in a dictionary")
 print(contacts)
-contacts.update({"Lucas":"(212)111-1111"})
+contacts.update({"Lucas": "(212)111-1111"})
 print(contacts)
 
 print("----- Example 7: Return items, keys, and values on a dictionary -----")
@@ -65,7 +66,7 @@ list_phrase = phrase.split()
 # create an empty dictionary
 word_count_dict = {}
 for word in list_phrase:
-    if word in word_count_dict: 
+    if word in word_count_dict:
         word_count_dict[word] += 1
     else:
         word_count_dict[word] = 1
@@ -74,14 +75,22 @@ for word in word_count_dict:
     print(f"{word} appears {word_count_dict[word]}")
 
 print("----- EXERCISE -----")
-users = ["peterpan@yahoo.com","annie@hotmail.com","carl@hotmail.com","martha@gmail.com","cassie@yahoo.com","josue@hotmail.com","john@hotmail.com"]
+users = [
+    "peterpan@yahoo.com",
+    "annie@hotmail.com",
+    "carl@hotmail.com",
+    "martha@gmail.com",
+    "cassie@yahoo.com",
+    "josue@hotmail.com",
+    "john@hotmail.com",
+]
 email_count_dict = {"@gmail.com": 0, "hotmail.com": 0, "@yahoo.com": 0}
 for user in users:
     if "gmail.com" in user:
         email_count_dict["@gmail.com"] += 1
     elif "hotmail.com" in user:
-        email_count_dict["hotmail.com"] +=1
+        email_count_dict["hotmail.com"] += 1
     elif "yahoo.com" in user:
-        email_count_dict["@yahoo.com"] +=1
+        email_count_dict["@yahoo.com"] += 1
 
 print(email_count_dict)

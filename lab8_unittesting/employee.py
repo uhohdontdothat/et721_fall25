@@ -3,6 +3,8 @@ October 6th, 2025
 Unit Testing
 Henry Perez
 """
+
+
 class Employee:
     raise_amt = 1.05
 
@@ -15,9 +17,10 @@ class Employee:
     @property
     def emailemployee(self):
         return f"{self.first}.{self.last}@email.com"
+
     @property
     def fullname(self):
         return f"{self.first}_{self.last}"
-    
+
     def apply_Raise(self):
-        self.salary = int(self.salary*self.raise_amt)
+        self.salary = int(self.salary * self.raise_amt)

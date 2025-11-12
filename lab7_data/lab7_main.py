@@ -3,6 +3,7 @@ Henry Perez
 Lab 7, accessing data in a file
 September 29th, 2025
 """
+
 from lab7_functions import *
 
 testing()
@@ -28,6 +29,6 @@ print("\n----- Example 7: Append data into an existing file -----")
 stamp_date("perez.txt")
 
 print("\n----- EXERCISE -----")
-count_yahoo = email_read("user_email.txt","@yahoo")
-count_gmail = email_read("user_email.txt","@gmail")
-count_hotmail = email_read("user_email.txt","@hotmail")
+count_yahoo = email_read("user_email.txt", "@yahoo")
+count_gmail = email_read("user_email.txt", "@gmail")
+count_hotmail = email_read("user_email.txt", "@hotmail")
