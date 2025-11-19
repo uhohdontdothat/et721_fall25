@@ -50,6 +50,14 @@ img{width: 100%; display: block;}
     margin: 0.5rem;
     border: solid gray 1px;
 }
-.dolist_list li{
+.listitem{
     list-style: none;
+    padding: 1rem;
+    background-color: rgb(230,230,230);
+}
+.listitem_completed{
+    padding: 1rem;
+    color: whitesmoke;
+    text-decoration: line-through;
+    background-color: rgb(50,50,50);
 }
