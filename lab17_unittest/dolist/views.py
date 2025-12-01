@@ -31,7 +31,7 @@ def completedTodo(request,todo_id):
 
 # function to delete all items that are marked as completed
 def deletecompleted(request):
-    Todolist.objects.filter(completed_exact = True).delete()
+    Todolist.objects.filter(completed = True).delete()
     return redirect('index')
 
 # function to delete all tasks in our list
