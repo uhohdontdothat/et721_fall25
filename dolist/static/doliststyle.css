@@ -32,9 +32,18 @@ img{width: 100%; display: block;}
 }
 .btndeleteeach{
     background-color: orange;
+    text-align: center;
+    color: aliceblue;
+    padding: 0.5rem;
+    border-radius: 5px;
+
 }
 .btndeleteall{
     background-color: darkorange;
+    text-align: center;
+    color: aliceblue;
+    padding: 0.5rem;
+    border-radius: 5px;
 }
 .btndeleteeach:hover, .btndeleteall:hover{
     background-color: darkred;
@@ -55,9 +64,16 @@ img{width: 100%; display: block;}
     padding: 1rem;
     background-color: rgb(230,230,230);
 }
-.listitem_completed{
-    padding: 1rem;
+.completed{
     color: whitesmoke;
     text-decoration: line-through;
     background-color: rgb(50,50,50);
+}
+.linkitem{
+    text-decoration: none;
+    color: rgb(50,50,50);
+}
+.linkitem:hover{
+    text-decoration: underline;
+    font-weight: bolder;
 }
